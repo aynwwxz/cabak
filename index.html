@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="kz">
+<head>
+  <meta charset="UTF-8">
+  <title>Prompt және Alert мысалы</title>
+</head>
+<body>
+  <h2>Prompt және Alert мысалы</h2>
+
+  <button onclick="askName()">Атыңызды енгізіңіз</button>
+  <button onclick="askAge()">Жасыңызды енгізіңіз</button>
+
+  <p id="result"></p>
+
+  <script>
+    function askName() {
+      let name = prompt("Атыңызды енгізіңіз:");
+      if (name) {
+        alert("Сәлем, " + name + "!");
+        document.getElementById("result").textContent = "Сәлем, " + name + "!";
+      } else {
+        alert("Сіз ештеңе енгізген жоқсыз.");
+      }
+    }
+
+    function askAge() {
+      let age = prompt("Жасыңызды енгізіңіз:");
+      if (age) {
+        alert("Сіздің жасыңыз: " + age);
+        document.getElementById("result").textContent = "Жасыңыз: " + age;
+      } else {
+        alert("Жасы енгізілмеді.");
+      }
+    }
+  </script>
+</body>
+</html>
+
+
